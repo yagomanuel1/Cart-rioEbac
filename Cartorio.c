@@ -133,7 +133,8 @@ int main()
 		printf("Escolha a opção desejada do menu:\n\n");
 		printf("\t1 - Registrar nomes\n");
 		printf("\t2 - Consultar nomes\n");
-		printf("\t3 - Deletar nomes\n\n"); 
+		printf("\t3 - Deletar nomes\n"); 
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Opção: "); //fim do menu
 	
 		scanf("%d", &opcao); //(scanf) escaneia a opção do Usuário.(%d) para armazenar uma variavel do tipo inteiro.(&) definir o nome da variavel q irá receber o armazenamento.
@@ -153,6 +154,11 @@ int main()
 			
 			case 3:
 			deletar();
+			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
 			break;
 			
 			default:
